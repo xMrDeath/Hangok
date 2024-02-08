@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hangok</title>
+    <style>
+        audio{
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <div class=".hangok">
         <button onclick="lejatszas('szunyog')">Szúnyog</button>
-        <button onclick="lejatszas('Tehén')">Tehén</button>
-        <button onclick="lejatszas('Macska')">Macska</button>
-        <button onclick="lejatszas('Kutya')">Kutya</button>
+        <button onclick="lejatszas('tehen')">Tehén</button>
+        <button onclick="lejatszas('macska')">Macska</button>
+        <button onclick="lejatszas('kutya')">Kutya</button>
         <div id="hang"><audio controls></audio></div>
+        <input type="button" onclick="lejatszas('csend')" value="Némítás">
     </div>
 
     <script>
         function lejatszas(x){
             if(x=='szunyog'){hang.innerHTML = "<audio controls autoplay><source src='./hangok/MosquitoBuzzing.mp3' type'audio/mpeg'></audio>"}
+            if(x=='tehen'){hang.innerHTML = "<audio controls autoplay><source src='./hangok/CowMoo.mp3' type'audio/mpeg'></audio>"}
+            if(x=='macska'){hang.innerHTML = "<audio controls autoplay><source src='./hangok/CatMeow.mp3' type'audio/mpeg'></audio>"}
+            if(x=='kutya'){hang.innerHTML = "<audio controls autoplay><source src='./hangok/DogsBarking.mp3' type'audio/mpeg'></audio>"}
+            if(x=='csend'){hang.innerHTML = "<audio controls></audio>"}
         }
     </script>
 </body>
