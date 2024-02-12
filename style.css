@@ -1,0 +1,24 @@
+body {
+    background-color: pink;
+}
+
+.hangok {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+   
+
+}
+button {
+    color:rgb(170, 20, 170); 
+    display: flex;
+   border: none;
+   justify-items:first baseline ;
+    
+}
+
+img {
+    max-width: 200px;
+    border-radius: 20px;
+    
+}

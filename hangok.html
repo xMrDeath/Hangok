@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
     <title>Hangok</title>
     <style>
         audio{
@@ -11,11 +12,19 @@
     </style>
 </head>
 <body>
-    <div class=".hangok">
+    <div class="hangok ">
         <button onclick="lejatszas('szunyog')">Szúnyog</button>
+      
         <button onclick="lejatszas('tehen')">Tehén</button>
+      
         <button onclick="lejatszas('macska')">Macska</button>
+   
         <button onclick="lejatszas('kutya')">Kutya</button>
+        <img src="./kep/malaria.png" alt="">
+        <img src="./kep/tehen.png" alt="">
+        <img src="./kep/macska.png" alt="">
+        <img src="./kep/dog.png" alt="">
+
         <div id="hang"><audio controls></audio></div>
         <input type="button" onclick="lejatszas('csend')" value="Némítás">
     </div>
@@ -29,5 +38,6 @@
             if(x=='csend'){hang.innerHTML = "<audio controls></audio>"}
         }
     </script>
+
 </body>
 </html>
